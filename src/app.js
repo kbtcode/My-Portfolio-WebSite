@@ -7,15 +7,12 @@ const ReadMoreBtn = document.querySelector('.read')
 const AboutTitle = document.getElementById('about')
 const MoreInfo = document.getElementById('more-info')
 const ServiceBoxes = document.querySelectorAll('#service-box')
-
 const NameElem = document.getElementById('FirstName-input')
 const LastElem = document.getElementById('LastName-input')
 const PhoneElem = document.getElementById('Phone-input')
 const EamilElem = document.getElementById('Email-input')
 const MessageElem = document.getElementById('message-input')
 const SubmitBtn = document.getElementById('Submit')
-
-
 
 /* Header-swicher */
 
@@ -31,8 +28,7 @@ function hideSections() {
 // show home section
 
 HeaderItems[0].addEventListener('click', () => {
-  
- 
+   
 hideSections()
 HomeSection.classList.remove('hide-section')
 
@@ -49,7 +45,6 @@ AboutSection.classList.remove('hide-section')
 })
 
 // show service section
-
 
 HeaderItems[2].addEventListener('click', () => {
 
@@ -72,11 +67,7 @@ HeaderItems[3].addEventListener('click', () => {
 hideSections()
 ContactSection.classList.remove('hide-section')
 
-
-
 })
-
-
 
 /* Hide and show about title */
 
@@ -89,7 +80,6 @@ MoreInfo.classList.contains('hide-about') ? ReadMoreBtn.textContent = 'Read more
 ReadMoreBtn.textContent = 'Hide more'
 
 })
-
 
 /* form validiation */
 
@@ -105,9 +95,6 @@ let RegexLastNameRes = RegexLastName.test(LastElem.value);
 let RegexPhoneRes = RegexPhone.test(PhoneElem.value);
 let RegexEmailRes = EmailRegex.test(EamilElem.value);
 
-
-
-
 if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && MessageElem.value){
 
 console.log('Your Inform is Valid');  
@@ -117,8 +104,8 @@ subject=New Project&body=name: ${NameElem.value}
 %0ALast Name: ${LastElem.value} 
 %0APhone: ${PhoneElem.value} 📱
 %0A%0AEmail: ${EamilElem.value} ✉
-%0A%0AMessage:${MessageElem.value} 📄
-`
+%0A%0AMessage:${MessageElem.value} 📄`
+
 NameElem.value = ''
 LastElem.value = ''
 PhoneElem.value = ''
@@ -130,6 +117,5 @@ MessageElem.value = ''
 console.log('Please Enter Valid Information');
 
 }
-
 })
 
