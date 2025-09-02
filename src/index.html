@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="overflow-x-hidden" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <title>Yosef Kabootari</title>
 </head>
-<body class="bg-gradient-to-b from-white to-sky-200/50 w-full h-lvh bg-no-repeat overflow-y-auto">
+<body class="overflow-x-hidden bg-gradient-to-b from-white to-sky-200/50 mx-auto w-full  bg-fixed bg-no-repeat bg-center
+max-sm:min-h-screen">
 
-<header class="h-20 w-[90%] mx-auto">
+<header class="h-20 max-w-[90%] w-full mx-auto">
 <nav class="w-full h-full flex justify-center items-center">
     <ul class="w-full flex justify-center items-center gap-8 font-PoppinMedium text-black/70">
         <li class="header-item leading-10 transition-all duration-300 hover:text-sky-400 hover:delay-150 hover:translate-y-1.5"><a href="#">Home</a></li>
@@ -21,14 +22,15 @@
 </header>
 
 
-<section class="h-[450px] w-[90%] mx-auto" id="home-section">
+<section class="max-w-[90%] mx-auto" id="home-section">
 
-<main class="h-full w-full flex mt-10 p-14 justify-between rounded-4xl relative">
+<main class="h-full w-full flex mt-10 p-14 justify-between rounded-4xl
+max-sm:flex max-sm:flex-col max-sm:gap-12 max-sm:justify-center max-sm:h-full max-sm:p-4">
 <div class="flex flex-col">
-<p class="text-4xl leading-24 font-MonsterateRegular text-black/75"><span class="font-MonsterateRegular bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Hello</span> I am Yosef</p>
-<p class="font-MonsterateRegular text-4xl text-black/75">I'm Front End Developer</p>
+<p class="text-4xl leading-24 font-MonsterateRegular text-black/75 max-sm:text-2xl max-sm:text-center"><span class="font-MonsterateRegular bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent ">Hello</span> I am Yosef</p>
+<p class="font-MonsterateRegular text-4xl text-black/75 max-sm:text-xl max-sm:text-center max-sm:w-full">I'm Front End Developer</p>
 
-<div class="flex mt-11 gap-5">
+<div class="flex mt-11 gap-5 max-sm:justify-center">
     <div class="w-10 h-10 border-2 border-purple-400/50 p-1.5 rounded-full transition-all duration-300 hover:scale-125  hover:bg-purple-300/20 cursor-pointer">
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="text-purple-400" fill="Currentcolor" x="0px" y="0px" width="22" height="22" viewBox="0 0 50 50">
             <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path>
@@ -43,16 +45,20 @@
 </div>
 </div>
 
-<button class="mt-11 bg-sky-300 rounded-2xl w-1/2 h-12 font-MonsterateRegular text-white cursor-pointer flex items-center justify-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+<div class="max-sm:flex max-sm:justify-center">
+<button class="mt-11 bg-sky-300 rounded-2xl w-1/2 h-12 p-4 font-MonsterateRegular text-white cursor-pointer flex items-center justify-center gap-1.5
+max-sm:w-[70%] max-sm:gap-2 max-sm:"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
     <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
     <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
   </svg>Download CV
   </button>
+</div>
 
 </div>
 
 
-<div class="w-1/2 h-full border-2 border-black rounded-full object-cover"></div>
+<div class="w-1/2 border-2 border-black rounded-full object-cover flex justify-center items-center
+max-sm:w-full max-sm:h-[400px]">my photo</div>
 
 
 
@@ -61,7 +67,7 @@
 </main>
 </section>
 
-<section class="h-[450px] w-[85%] mx-auto absolute top-28 left-0 right-0 hide-section" id="about-section">
+<section class="h-[450px] w-[85%] mx-auto absolute top-28 left-0 right-0  hide-section" id="about-section">
 
     
  <main class="w-full h-full flex flex-col items-center gap-8 mt-8">
@@ -87,16 +93,20 @@
     </section>
 
 
-    <section class="h-[450px] w-[90%] mx-auto  absolute top-28 left-0 right-0 hide-section space-y-14" id="service-section">
+    <section class="h-[450px]  w-[90%] mx-auto absolute top-28 left-0 right-0 hide-section space-y-14
+    max-sm:w-[80%] max-sm:min-h-screen" id="service-section">
 
      <div class="flex justify-center font-PoppinMedium">
-        <h1 class="text-2xl bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent leading-13">Service</h1>
+        <h1 class="text-2xl bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent leading-13
+        max-sm:text-xl">Service</h1>
      </div>
 
-        <main class="grid grid-cols-12 grid-rows-12 gap-8 h-full w-full">
+        <main class="grid grid-cols-12 grid-rows-12 gap-8 h-full w-full
+        max-sm:grid-cols-1 max-sm:gap-10 max-sm:grid-rows-4">
      
 
-    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10">
+    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10
+    max-sm:col-span-full">
      <div class="p-10 w-full flex flex-col gap-7 justify-center items-center">
       <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-white">
@@ -113,7 +123,8 @@
      </div>
     </div>
 
-    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10">
+    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10
+    max-sm:col-span-full">
         <div class="p-10 w-full flex flex-col gap-7 justify-center items-center">
             <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr  from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-white">
@@ -129,7 +140,8 @@
       
            </div>   
     </div>
-    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10">
+    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10
+    max-sm:col-span-full">
         <div class="p-10 w-full flex flex-col gap-7 justify-center items-center">
             <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
                 <img class="h-8 w-8" src="/images/icons8-development-50.png" alt="">
@@ -144,7 +156,8 @@
       
            </div>
     </div>
-    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10">
+    <div id="service-box" class="col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10
+    max-sm:col-span-full">
         <div class="p-10 w-full flex flex-col gap-7 justify-center items-center">
             <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-white">
@@ -177,34 +190,34 @@
 
             <div class="w-full flex flex-col gap-8">
 
-            <div class="p-5 w-full h-[410px]  gap-5 font-MonsterateRegular space-y-6">
-                <div class="flex justify-center gap-6">
-                <div class="flex flex-col gap-1.5">
+            <div class="p-5 w-full h-[410px]  gap-5 font-MonsterateRegular space-y-6 max-sm:w-[90%] max-sm:mx-auto">
+                <div class="flex justify-center gap-6 max-sm:flex-col">
+                <div class="flex flex-col gap-1.5 max-sm:justify-center">
                 <label for="name" class="text-xs text-black/70 before:content-['-'] before:text-sky-400">First Name</label>
-                <input id="FirstName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs" type="text">
+                <input id="FirstName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
             </div>
             <div class="flex flex-col gap-1.5">
                 <label for="last name" class="text-xs  text-black/70 before:content-['-'] before:text-sky-400">Last name</label>
-                <input id="LastName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs" type="text">
+                <input id="LastName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
             </div>
     </div>
-    <div class="flex justify-center gap-6">
+    <div class="flex justify-center gap-6 max-sm:flex-col">
     <div class="flex flex-col gap-1.5">
         <label for="phone" class="text-xs  text-black/70 before:content-['-'] before:text-sky-400">Phone Number</label>
-        <input id="Phone-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs" type="tel" placeholder="example:---- --- ----">
+        <input id="Phone-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="tel" placeholder="example:---- --- ----">
     </div>
     <div class="flex flex-col gap-1.5">
         <label for="Email" class="text-xs  text-black/70 before:content-['-'] before:text-sky-400">Email</label>
-        <input id="Email-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs" type="text">
+        <input id="Email-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
     </div>
     </div>
 
 
 
-    <div class="flex justify-center">
-     <div class="flex flex-col gap-1.5"> 
+    <div class="flex justify-center max-sm:w-full">
+     <div class="flex flex-col gap-1.5 max-sm:w-full"> 
       <label for="messaage" class="text-xs font-MonsterateRegular text-black/70 before:content-['-'] before:text-sky-400">messaage</label>    
-    <textarea class="w-[790px]  h-36 outline-1 rounded-xl  outline-cyan-500/70 p-2 text-xs" name="" id="message-input"></textarea>
+    <textarea class="w-[790px]  h-36 outline-1 rounded-xl  outline-cyan-500/70 p-2 text-xs max-sm:w-full" name="" id="message-input"></textarea>
 
     
 </div>

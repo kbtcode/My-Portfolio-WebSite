@@ -29,7 +29,8 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 /* Two-step transition approach */
 
-@apply invisible transition-all duration-500  opacity-0 translate-x-16 pointer-events-none;
+@apply invisible transition-all duration-500  opacity-0 translate-x-16 pointer-events-none
+max-sm:translate-x-5;
 
 }
 

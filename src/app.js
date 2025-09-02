@@ -97,14 +97,14 @@ let RegexEmailRes = EmailRegex.test(EamilElem.value);
 
 if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && MessageElem.value){
 
-console.log('Your Inform is Valid');  
+//console.log('Your Inform is Valid');  
 
-window.location.href = `mailto:yosef.kabootari69@gmail.com?
+window.location.href = `mailto:yosef.842005@gmail.com?
 subject=New Project&body=name: ${NameElem.value} 
 %0ALast Name: ${LastElem.value} 
 %0APhone: ${PhoneElem.value} 📱
 %0A%0AEmail: ${EamilElem.value} ✉
-%0A%0AMessage:${MessageElem.value} 📄`
+%0A%0AMessage 📄:${MessageElem.value}`
 
 NameElem.value = ''
 LastElem.value = ''
