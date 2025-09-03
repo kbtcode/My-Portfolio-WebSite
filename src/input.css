@@ -29,10 +29,17 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 /* Two-step transition approach */
 
-@apply invisible transition-all duration-500  opacity-0 translate-x-16 pointer-events-none
+@apply hidden;
+
+}
+
+.show-section{
+
+@apply block transition-all duration-500  opacity-100 translate-x-16 
 max-sm:translate-x-5;
 
 }
+
 
 .read{
 
@@ -48,7 +55,8 @@ max-sm:translate-x-5;
 
 .show-about{
 
-@apply block visible h-20 transition-all duration-300 opacity-100;
+@apply block visible h-20 transition-all duration-300 opacity-100
+max-sm:h-32;
 
 }
 

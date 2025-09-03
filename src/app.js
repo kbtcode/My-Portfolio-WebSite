@@ -18,12 +18,14 @@ const SubmitBtn = document.getElementById('Submit')
 
 function hideSections() {
 
-    HomeSection.classList.add('hide-section')
-    AboutSection.classList.add('hide-section')
-    ServiceSection.classList.add('hide-section')
-    ContactSection.classList.add('hide-section')
-
+HomeSection.classList.add('hide-section')
+AboutSection.classList.add('hide-section')
+ServiceSection.classList.add('hide-section')
+ContactSection.classList.add('hide-section')
+    
 }
+
+
 
 // show home section
 
@@ -39,8 +41,10 @@ HomeSection.classList.remove('hide-section')
 HeaderItems[1].addEventListener('click', () => {
 
 hideSections()
-AboutTitle.classList.add('animate-show')
 AboutSection.classList.remove('hide-section')
+
+// for about title
+AboutTitle.classList.add('animate-show')
 
 })
 

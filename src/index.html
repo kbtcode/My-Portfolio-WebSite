@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="overflow-x-hidden" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body class="overflow-x-hidden bg-gradient-to-b from-white to-sky-200/50 mx-auto w-full  bg-fixed bg-no-repeat bg-center
 max-sm:min-h-screen">
 
-<header class="h-20 max-w-[90%] w-full mx-auto">
+<header class="h-20 w-[90%]  mx-auto">
 <nav class="w-full h-full flex justify-center items-center">
     <ul class="w-full flex justify-center items-center gap-8 font-PoppinMedium text-black/70">
         <li class="header-item leading-10 transition-all duration-300 hover:text-sky-400 hover:delay-150 hover:translate-y-1.5"><a href="#">Home</a></li>
@@ -22,7 +22,7 @@ max-sm:min-h-screen">
 </header>
 
 
-<section class="max-w-[90%] mx-auto" id="home-section">
+<section class="w-[90%] mx-auto max-sm:h-screen" id="home-section">
 
 <main class="h-full w-full flex mt-10 p-14 justify-between rounded-4xl
 max-sm:flex max-sm:flex-col max-sm:gap-12 max-sm:justify-center max-sm:h-full max-sm:p-4">
@@ -57,7 +57,7 @@ max-sm:w-[70%] max-sm:gap-2 max-sm:"><svg xmlns="http://www.w3.org/2000/svg" vie
 </div>
 
 
-<div class="w-1/2 border-2 border-black rounded-full object-cover flex justify-center items-center
+<div class="w-[45%] border-2 border-black rounded-full object-cover flex justify-center items-center
 max-sm:w-full max-sm:h-[400px]">my photo</div>
 
 
@@ -67,19 +67,21 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
 </main>
 </section>
 
-<section class="h-[450px] w-[85%] mx-auto absolute top-28 left-0 right-0  hide-section" id="about-section">
+<section class="h-[450px] w-[85%] mx-auto absolute top-28 left-0 right-0 hide-section max-sm:h-screen
+max-sm:w-[90%]" id="about-section">
 
     
  <main class="w-full h-full flex flex-col items-center gap-8 mt-8">
     
 <h1 class="font-PoppinMedium text-2xl bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent leading-13
-" id="about">About me</h1>
+max-sm:leading-32" id="about">About me</h1>
     
-<div class="flex gap-14">
+<div class="flex gap-14 max-sm:flex-col-reverse max-sm:gap-10">
         
-<div class="w-[60%] h-[450px] rounded-t-full rounded-b-4xl border-2 flex justify-center items-center border-black">my photo</div>
-<div class="p-10">
-<p class="font-MonsterateRegular w-[82%]">Hi, I'm Yosef a junior Front-End Developer passionate about building clean and user-friendly websites.
+<div class="w-[60%] h-[450px] rounded-t-full rounded-b-4xl border-2 flex justify-center items-center border-black
+max-sm:w-full max-sm:h-[500px]">my photo</div>
+<div class="p-10 max-sm:p-0 max-sm:w-full max-sm:h-[40%]">
+<p class="font-MonsterateRegular w-[82%] max-sm:w-full max-sm:h-full">Hi, I'm Yosef a junior Front-End Developer passionate about building clean and user-friendly websites.
     I started my journey with HTML, CSS, and JavaScript, and now I'm learning modern tools like
     <span class="hide-about" id="more-info">Tailwind CSS and React.
         I enjoy turning ideas into interactive and visually appealing designs.
@@ -93,7 +95,7 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
     </section>
 
 
-    <section class="h-[450px]  w-[90%] mx-auto absolute top-28 left-0 right-0 hide-section space-y-14
+    <section class="h-[450px]  w-[90%] mx-auto absolute top-28 left-0 right-0 hide-section space-y-14 max-sm:h-screen
     max-sm:w-[80%] max-sm:min-h-screen" id="service-section">
 
      <div class="flex justify-center font-PoppinMedium">
@@ -177,7 +179,7 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
    </main>
     </section>
 
-   <section class="h-[450px] w-[90%] mx-auto  absolute top-28 left-0 right-0 hide-section space-y-16" id="contact-section">
+   <section class="h-[450px] w-[90%] mx-auto  absolute top-28 left-0 right-0 hide-section space-y-16 max-sm:h-screen" id="contact-section">
 
        
        <main class="flex flex-col gap-8 justify-center items-center">
@@ -224,7 +226,7 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
 
 </div>  
 
-<div class="flex justify-center mt-12">
+<div class="flex justify-center mt-12 max-sm:h-14">
 <button type="button" class="w-40 h-10 cursor-pointer border-none rounded-2xl text-white font-PoppinMedium bg-sky-400 transition-all duration-500
 hover:scale-110 hover:shadow-md hover:bg-indigo-400" id="Submit">Submit</button>
 </div>
