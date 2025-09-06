@@ -1,4 +1,5 @@
 const HeaderItems = document.querySelectorAll('.header-item')
+const Sections = document.querySelectorAll('.section')
 const HomeSection = document.getElementById('home-section')
 const AboutSection = document.getElementById('about-section')
 const ServiceSection = document.getElementById('service-section')
@@ -16,63 +17,51 @@ const SubmitBtn = document.getElementById('Submit')
 
 /* Header-swicher */
 
-function hideSections() {
+ function hideSections() {
 
-HomeSection.classList.add('hide-section')
-AboutSection.classList.add('hide-section')
-ServiceSection.classList.add('hide-section')
-ContactSection.classList.add('hide-section')
+ HomeSection.classList.add('hide-section')
+ AboutSection.classList.add('hide-section')
+ ServiceSection.classList.add('hide-section')
+ ContactSection.classList.add('hide-section')
     
 }
 
+function EmptyFormValues(){
 
+NameElem.value = ''
+LastElem.value = ''
+PhoneElem.value = ''
+EamilElem.value = ''
+MessageElem.value = ''    
+    
+}
 
-// show home section
+HeaderItems.forEach((btn,index) => {
 
-HeaderItems[0].addEventListener('click', () => {
-   
-hideSections()
-HomeSection.classList.remove('hide-section')
+btn.addEventListener('click', () => {
 
-})
+hideSections()    
+Sections[index].classList.remove('hide-section')    
 
-// show about section
+if(!AboutSection.classList.contains('hide-section')){
 
-HeaderItems[1].addEventListener('click', () => {
+AboutTitle.classList.add('animate-show') 
 
-hideSections()
-AboutSection.classList.remove('hide-section')
-
-// for about title
-AboutTitle.classList.add('animate-show')
-
-})
-
-// show service section
-
-HeaderItems[2].addEventListener('click', () => {
-
-hideSections()
+}
+    
+else if(!ServiceSection.classList.contains('hide-section')){
 
 ServiceBoxes.forEach(box => {
-
+    
 box.classList.add('animate-bottom')
 
 })
-
-ServiceSection.classList.remove('hide-section')
-
-})
-
-// show contact section 
-
-HeaderItems[3].addEventListener('click', () => {
-
-hideSections()
-ContactSection.classList.remove('hide-section')
+        
+}
 
 })
 
+})
 /* Hide and show about title */
 
 ReadMoreBtn.addEventListener('click', () => {
@@ -101,20 +90,14 @@ let RegexEmailRes = EmailRegex.test(EamilElem.value);
 
 if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && MessageElem.value){
 
-//console.log('Your Inform is Valid');  
-
 window.location.href = `mailto:yosef.842005@gmail.com?
-subject=New Project&body=name: ${NameElem.value} 
+subject=New Project&body=name:${NameElem.value} 
 %0ALast Name: ${LastElem.value} 
 %0APhone: ${PhoneElem.value} 📱
 %0A%0AEmail: ${EamilElem.value} ✉
 %0A%0AMessage 📄:${MessageElem.value}`
 
-NameElem.value = ''
-LastElem.value = ''
-PhoneElem.value = ''
-EamilElem.value = ''
-MessageElem.value = ''
+EmptyFormValues()
   
 } else {
 
@@ -122,4 +105,5 @@ console.log('Please Enter Valid Information');
 
 }
 })
+
 

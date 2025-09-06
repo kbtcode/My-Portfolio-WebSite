@@ -27,18 +27,12 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 .hide-section{
 
-/* Two-step transition approach */
-
-@apply hidden;
+  @apply hidden;
 
 }
 
-.show-section{
 
-@apply block transition-all duration-500  opacity-100 translate-x-16 
-max-sm:translate-x-5;
 
-}
 
 
 .read{
