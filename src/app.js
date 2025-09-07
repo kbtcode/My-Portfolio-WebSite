@@ -7,7 +7,7 @@ const ContactSection = document.getElementById('contact-section')
 const ReadMoreBtn = document.querySelector('.read')
 const AboutTitle = document.getElementById('about')
 const MoreInfo = document.getElementById('more-info')
-const ServiceBoxes = document.querySelectorAll('#service-box')
+const ServiceBoxes = document.querySelectorAll('.service-box')
 const NameElem = document.getElementById('FirstName-input')
 const LastElem = document.getElementById('LastName-input')
 const PhoneElem = document.getElementById('Phone-input')
@@ -23,7 +23,7 @@ const SubmitBtn = document.getElementById('Submit')
  AboutSection.classList.add('hide-section')
  ServiceSection.classList.add('hide-section')
  ContactSection.classList.add('hide-section')
-    
+
 }
 
 function EmptyFormValues(){
@@ -52,7 +52,7 @@ AboutTitle.classList.add('animate-show')
 else if(!ServiceSection.classList.contains('hide-section')){
 
 ServiceBoxes.forEach(box => {
-    
+
 box.classList.add('animate-bottom')
 
 })
@@ -107,3 +107,27 @@ console.log('Please Enter Valid Information');
 })
 
 
+const template = document.createElement('template');
+template.innerHTML = `
+<link rel="stylesheet" href="output.css">
+    
+     <div class="p-10 w-full flex flex-col gap-7 justify-center items-center">
+      <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
+       <slot class="text-white" name="icon"></slot>
+        </div>
+        
+        
+          <h1 class="font-PoppinMedium text-xl border-b-2 pb-1 border-b-sky-400 text-black/60"><slot name="title"></slot></h1>
+          <p class="font-MonsterateRegular"><slot name="summary"></slot></p>
+
+     </div>`;
+
+class Service extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+  }
+}
+
+window.customElements.define('site-service', Service);

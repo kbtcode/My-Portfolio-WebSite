@@ -27,12 +27,15 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 .hide-section{
 
-  @apply hidden;
+@apply hidden
 
 }
 
+.show-section{
 
+@apply 
 
+}
 
 
 .read{
