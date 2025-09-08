@@ -14,6 +14,26 @@ const PhoneElem = document.getElementById('Phone-input')
 const EamilElem = document.getElementById('Email-input')
 const MessageElem = document.getElementById('message-input')
 const SubmitBtn = document.getElementById('Submit')
+const ShowMenu = document.getElementById('menu-bar')
+const HeaderMenu = document.getElementById('header-menu')
+const BreakMenu = document.getElementById('break-menu')
+const AlertNotif = document.getElementById('alert')
+
+ShowMenu.addEventListener('click', () => {
+
+HeaderMenu.classList.toggle('show-menu')
+
+})
+
+function Break(){
+
+HeaderMenu.classList.remove('show-menu')
+
+}
+
+
+
+
 
 /* Header-swicher */
 
@@ -42,6 +62,8 @@ btn.addEventListener('click', () => {
 
 hideSections()    
 Sections[index].classList.remove('hide-section')    
+Break()
+
 
 if(!AboutSection.classList.contains('hide-section')){
 
@@ -101,7 +123,13 @@ EmptyFormValues()
   
 } else {
 
-console.log('Please Enter Valid Information');
+AlertNotif.classList.add('alert-modal')
+
+setTimeout(() => {
+  
+AlertNotif.classList.remove('alert-modal')
+
+}, 3000);
 
 }
 })
@@ -131,3 +159,5 @@ class Service extends HTMLElement {
 }
 
 window.customElements.define('site-service', Service);
+
+BreakMenu.addEventListener('click', Break)

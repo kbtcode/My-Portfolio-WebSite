@@ -31,9 +31,15 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 }
 
-.show-section{
+.show-menu{
 
-@apply 
+@apply visible opacity-100 flex flex-col w-32 h-[95%] rounded-3xl ml-2 absolute right-0 top-16 left-0 bg-white/15 backdrop-blur-md shadow-xl z-50 transition-all duration-300;
+
+}
+
+.alert-modal{
+
+@apply opacity-100 transition-all translate-y-8 duration-300 visible
 
 }
 
