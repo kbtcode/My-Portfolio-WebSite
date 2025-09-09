@@ -115,7 +115,7 @@ let RegexEmailRes = EmailRegex.test(EamilElem.value);
 if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && MessageElem.value){
 
 window.location.href = `mailto:yosef.842005@gmail.com?
-subject=New Project&body=%0Aname:${NameElem.value} 
+subject=New Project&body=name:${NameElem.value} 
 %0ALast Name: ${LastElem.value} 
 %0APhone: ${PhoneElem.value} 📱
 %0A%0AEmail: ${EamilElem.value} ✉
