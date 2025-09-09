@@ -11,7 +11,7 @@ const ServiceBoxes = document.querySelectorAll('.service-box')
 const NameElem = document.getElementById('FirstName-input')
 const LastElem = document.getElementById('LastName-input')
 const PhoneElem = document.getElementById('Phone-input')
-const EamilElem = document.getElementById('Email-input')
+const EmailElem = document.getElementById('Email-input')
 const MessageElem = document.getElementById('message-input')
 const SubmitBtn = document.getElementById('Submit')
 const ShowMenu = document.getElementById('menu-bar')
@@ -108,18 +108,16 @@ let EmailRegex = /^(\w*)+.?(\w*){3,15}@(\w){3,5}.[\w]{2,3}$/
 let RegexResName = RegexName.test(NameElem.value);
 let RegexLastNameRes = RegexLastName.test(LastElem.value);
 let RegexPhoneRes = RegexPhone.test(PhoneElem.value);
-let RegexEmailRes = EmailRegex.test(EamilElem.value);
+let RegexEmailRes = EmailRegex.test(EmailElem.value);
 
 
 
 if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && MessageElem.value){
 
-window.location.href = `mailto:yosef.842005@gmail.com?
-subject=New Project&body=name:${NameElem.value} 
-%0ALast Name: ${LastElem.value} 
-%0APhone: ${PhoneElem.value} 📱
-%0A%0AEmail: ${EamilElem.value} ✉
-%0A%0AMessage 📄:${MessageElem.value}`
+
+  window.location.href = `mailto:yosef.842005@gmail.com?subject=${encodeURIComponent('New Project')}&body=${encodeURIComponent(
+    `name: ${NameElem.value}\nLast Name: ${LastElem.value}\nPhone: ${PhoneElem.value} 📱\n\nEmail: ${EmailElem.value} ✉\n\nMessage 📄: ${MessageElem.value}`
+  )}`;
 
 EmptyFormValues()
   
