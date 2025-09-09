@@ -110,10 +110,12 @@ let RegexLastNameRes = RegexLastName.test(LastElem.value);
 let RegexPhoneRes = RegexPhone.test(PhoneElem.value);
 let RegexEmailRes = EmailRegex.test(EamilElem.value);
 
+
+
 if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && MessageElem.value){
 
 window.location.href = `mailto:yosef.842005@gmail.com?
-subject=New Project&body=name:${NameElem.value} 
+subject=New Project&body=%0Aname:${NameElem.value} 
 %0ALast Name: ${LastElem.value} 
 %0APhone: ${PhoneElem.value} 📱
 %0A%0AEmail: ${EamilElem.value} ✉
@@ -139,6 +141,7 @@ const template = document.createElement('template');
 template.innerHTML = `
 <link rel="stylesheet" href="output.css">
     
+
      <div class="p-10 w-full flex flex-col gap-7 justify-center items-center">
       <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
        <slot class="text-white" name="icon"></slot>
@@ -149,6 +152,8 @@ template.innerHTML = `
           <p class="font-MonsterateRegular"><slot name="summary"></slot></p>
 
      </div>`;
+
+
 
 class Service extends HTMLElement {
   constructor() {

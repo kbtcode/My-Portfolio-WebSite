@@ -58,8 +58,8 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 .show-about{
 
-@apply block visible h-20 transition-all duration-300 opacity-100
-max-sm:h-32;
+@apply block visible h-[70px] transition-all duration-300 opacity-100
+max-sm:h-24;
 
 }
 
