@@ -102,7 +102,7 @@ SubmitBtn.addEventListener('click', () => {
 
 let RegexName = /^(\D){3,12}$/
 let RegexLastName = /^(\D){3,22}$/
-let RegexPhone = /^(091([0-8])|090[0-5]|099[0-6]|093[0-9]|092[0-4]) \d{3} \d{4}$/
+let RegexPhone = /^(091([0-8])|090[0-5]|099[0-6]|093[0-9]|092[0-4]|094[0-2]) \d{3} \d{4}$/
 let EmailRegex = /^(\w*)+.?(\w*){3,15}@(\w){3,5}.[\w]{2,3}$/
 
 let RegexResName = RegexName.test(NameElem.value);
