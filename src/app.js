@@ -116,7 +116,7 @@ if(RegexResName && RegexLastNameRes && RegexPhoneRes && RegexEmailRes && Message
 
 
   window.location.href = `mailto:yosef.842005@gmail.com?subject=${encodeURIComponent('New Project')}&body=${encodeURIComponent(
-    `name: ${NameElem.value}\nLast Name: ${LastElem.value}\nPhone: ${PhoneElem.value} 📱\n\nEmail: ${EmailElem.value} ✉\n\nMessage 📄: ${MessageElem.value}`
+    `name: ${NameElem.value}\n\nLast Name: ${LastElem.value}\n\nPhone: ${PhoneElem.value} 📱\n\nEmail: ${EmailElem.value} ✉\n\nMessage 📄: ${MessageElem.value}`
   )}`;
 
 EmptyFormValues()
