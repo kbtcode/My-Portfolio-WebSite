@@ -42,8 +42,8 @@ max-sm:min-h-screen">
 <main class="h-full w-full flex mt-10 p-14 justify-between rounded-4xl
 max-sm:flex max-sm:flex-col max-sm:gap-12 max-sm:justify-center max-sm:h-full max-sm:p-4">
 <div class="flex flex-col">
-<p class="text-4xl leading-24 font-MonsterateRegular text-black/75 max-sm:text-2xl max-sm:text-center"><span class="font-MonsterateRegular bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Hello</span> I am Yosef</p>
-<p class="font-MonsterateRegular text-4xl text-black/75 max-sm:text-xl max-sm:text-center max-sm:w-full">I'm Front End Developer</p>
+<p class="text-4xl leading-24 font-MonsterateRegular text-black/75 max-xl:text-3xl max-sm:text-2xl max-sm:text-center"><span class="font-MonsterateRegular bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Hello</span> I am Yosef</p>
+<p class="font-MonsterateRegular text-4xl text-black/75 max-xl:text-2xl max-sm:text-xl max-sm:text-center max-sm:w-full">I'm Front End Developer</p>
 
 <div class="flex mt-11 gap-5 max-sm:justify-center">
     <div class="w-10 h-10 border-2 border-purple-400/50 p-1.5 rounded-full transition-all duration-300 hover:scale-125  hover:bg-purple-300/20 cursor-pointer">
@@ -62,7 +62,7 @@ max-sm:flex max-sm:flex-col max-sm:gap-12 max-sm:justify-center max-sm:h-full ma
 
 <div class="max-sm:flex max-sm:justify-center">
 <button class="mt-11 bg-sky-300 rounded-2xl w-1/2 h-12 p-4 font-MonsterateRegular text-white cursor-pointer flex items-center justify-center gap-1.5
-max-sm:w-[70%] max-sm:gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+max-sm:w-[70%] max-xl:w-[70%] max-sm:gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
     <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
     <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
   </svg>Download CV
@@ -91,12 +91,13 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
 <h1 class="font-PoppinMedium text-2xl bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent leading-13
 max-sm:leading-32" id="about">About me</h1>
     
-<div class="flex gap-14 max-sm:flex-col-reverse max-sm:gap-10">
+<div class="flex gap-14 max-sm:flex-col-reverse max-sm:gap-10 max-xl:flex-col-reverse max-xl:justify-center max-xl:items-center">
         
 <div class="w-[60%] h-[450px] rounded-t-full rounded-b-4xl border-2 flex justify-center items-center border-black
 max-sm:w-full max-sm:h-[400px]">my photo</div>
-<div class="p-10 max-sm:p-1.5 max-sm:w-full max-sm:h-[40%]">
-<p class="font-MonsterateRegular w-[82%] max-sm:w-full max-sm:h-full max-sm:text-sm">Hi, I'm Yosef a junior Front-End Developer passionate about building clean and user-friendly websites.
+
+<div class="p-10 max-sm:p-1.5 max-sm:w-full max-sm:h-[40%] max-xl:flex max-xl:items-center max-xl:justify-center">
+<p class="font-MonsterateRegular w-[82%] max-sm:w-full max-sm:h-full max-sm:text-sm max-xl:text-sm max-xl:text-center">Hi, I'm Yosef a junior Front-End Developer passionate about building clean and user-friendly websites.
     I started my journey with HTML, CSS, and JavaScript, and now I'm learning modern tools like
     <span class="hide-about" id="more-info">Tailwind CSS and React.
         I enjoy turning ideas into interactive and visually appealing designs.
@@ -119,11 +120,13 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
      </div>
 
         <main class="grid grid-cols-12 grid-rows-12 gap-8 h-full w-full
-        max-sm:grid-cols-1 max-sm:gap-10 max-sm:grid-rows-4">
+        max-sm:grid-cols-1 max-sm:gap-10 max-sm:grid-rows-4
+        max-xl:grid-cols-6 max-xl:grid-rows-12">
     
 
 
-<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full">
+<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full
+max-xl:col-span-3 max-xl:row-span-11">
         <site-service>
             <span slot="icon">
                 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -137,7 +140,8 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
           </site-service>
         </div>  
   
-<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full">
+<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full
+max-xl:col-span-3 max-xl:row-span-11">
 
 <site-service>
 <span slot="icon">
@@ -150,7 +154,9 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
 </site-service>
 </div>  
 
-<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full">
+<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full
+max-xl:col-span-3 max-xl:row-span-11">
+
 <site-service>
 <span slot="icon">
 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -162,7 +168,8 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
 </site-service>
 </div>  
 
-<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full">
+<div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full
+max-xl:col-span-3 max-xl:row-span-11">
 
 <site-service>
 <span slot="icon"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

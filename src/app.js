@@ -31,10 +31,6 @@ HeaderMenu.classList.remove('show-menu')
 
 }
 
-
-
-
-
 /* Header-swicher */
 
  function hideSections() {
@@ -51,7 +47,7 @@ function EmptyFormValues(){
 NameElem.value = ''
 LastElem.value = ''
 PhoneElem.value = ''
-EamilElem.value = ''
+EmailElem.value = ''
 MessageElem.value = ''    
     
 }
@@ -146,8 +142,8 @@ template.innerHTML = `
         </div>
         
         
-          <h1 class="font-PoppinMedium text-xl border-b-2 pb-1 border-b-sky-400 text-black/60"><slot name="title"></slot></h1>
-          <p class="font-MonsterateRegular"><slot name="summary"></slot></p>
+          <h1 class="font-PoppinMedium text-xl border-b-2 pb-1 border-b-sky-400 text-black/60 max-sm:text-[16px]"><slot name="title"></slot></h1>
+          <p class="font-MonsterateRegular max-sm:text-sm max-sm:text-center"><slot name="summary"></slot></p>
 
      </div>`;
 
