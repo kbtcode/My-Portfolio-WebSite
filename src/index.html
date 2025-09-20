@@ -9,19 +9,24 @@
 <body class="overflow-x-hidden bg-gradient-to-b from-white to-sky-200/50 mx-auto w-full bg-fixed bg-no-repeat bg-center
 max-sm:min-h-screen">
 
+
+
+<!-- menu -->
 <header class="h-20 w-[90%] mx-auto max-sm:p-2">
 
+    <!-- menu mobile  -->
     <div class="w-10 h-10 m-4 border-[1px]  text-black/70 border-black/70 transition-all duration-300 hover:text-sky-400 hover:border-sky-400 p-[9px] rounded-xl cursor-pointer hidden max-sm:block" id="menu-bar">
         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
           </svg>          
     </div>
 
-<nav class="w-full h-full flex justify-center items-center">
+<nav class="w-full h-full flex justify-center items-center 
+max-sm:items-center max-sm:justify-start">
     
     
     <ul class="w-full flex justify-center items-center gap-8 font-PoppinMedium text-black/70
-    max-sm:invisible max-sm:opacity-0 max-sm:gap-0 max-sm:p-4 max-sm:justify-around" id="header-menu">
+    max-sm:invisible max-sm:opacity-0 max-sm:gap-0 max-sm:p-4" id="header-menu">
      
     <li id="break-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class=" w-11 h-8 text-rose-400/60 hidden max-sm:block">
         <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -37,12 +42,13 @@ max-sm:min-h-screen">
 </header>
 
 
+<!-- home section -->
 <section class="section w-[90%] mx-auto max-sm:h-screen max-sm:mb-6" id="home-section">
 
 <main class="h-full w-full flex mt-10 p-14 justify-between rounded-4xl
 max-sm:flex max-sm:flex-col max-sm:gap-12 max-sm:justify-center max-sm:h-full max-sm:p-4">
 <div class="flex flex-col">
-<p class="text-4xl leading-24 font-MonsterateRegular text-black/75 max-xl:text-3xl max-sm:text-2xl max-sm:text-center"><span class="font-MonsterateRegular bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Hello</span> I am Yosef</p>
+<p class="text-4xl leading-24 font-MonsterateRegular text-black/75 max-xl:text-3xl max-sm:text-2xl max-sm:text-center animate-welcome"><span class="font-MonsterateRegular bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent ">Hello</span> I am Yosef</p>
 <p class="font-MonsterateRegular text-4xl text-black/75 max-xl:text-2xl max-sm:text-xl max-sm:text-center max-sm:w-full">I'm Front End Developer</p>
 
 <div class="flex mt-11 gap-5 max-sm:justify-center">
@@ -82,6 +88,9 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
 </main>
 </section>
 
+
+<!-- about section -->
+
 <section class="section h-[450px] w-[85%] mx-auto absolute top-28 left-0 right-0 hide-section
  max-sm:min-h-screen max-sm:w-[90%] max-sm:mb-6" id="about-section">
 
@@ -111,6 +120,8 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
     </section>
 
 
+    <!-- service section -->
+
     <section class="section h-[450px]  w-[90%] mx-auto absolute top-28 left-0 right-0 hide-section space-y-14 max-sm:h-screen
     max-sm:w-[80%] max-sm:min-h-screen" id="service-section">
 
@@ -124,6 +135,7 @@ max-sm:w-full max-sm:h-[400px]">my photo</div>
         max-xl:grid-cols-6 max-xl:grid-rows-12">
     
 
+<!-- contact section  -->
 
 <div class="service-box col-span-3 row-span-10 border-[1px] border-black/10 shadow-sm shadow-gray-200 rounded-3xl bg-gray-400/10 max-sm:col-span-full
 max-xl:col-span-3 max-xl:row-span-11">
@@ -256,7 +268,6 @@ max-sm:w-[80%]">
   </main>
 
    </section>
-
 
 <script src="app.js"></script>
 </body>

@@ -25,15 +25,21 @@ src: url("/Fonts/Poppins-Medium.ttf");
 }
 
 
+.section {
+
+  @apply visible opacity-100 translate-x-0 transition-all duration-500;
+
+}
+
 .hide-section{
 
-@apply hidden
+@apply invisible overflow-y-hidden opacity-0 transition-all duration-500 translate-x-24
 
 }
 
 .show-menu{
 
-@apply visible opacity-100 flex flex-col w-32 h-[95%] rounded-3xl ml-2 absolute right-0 top-16 left-0 bg-white/15 backdrop-blur-md shadow-xl z-50 transition-all duration-300;
+@apply visible opacity-100 flex flex-col justify-around items-center absolute top-[69px] w-32 h-[90%] rounded-3xl bg-white/15 backdrop-blur-md shadow-xl z-50 transition-all duration-300;
 
 }
 
@@ -117,6 +123,29 @@ opacity: 1;
 
 
 
+
+@keyframes welcome {
+
+0%{
+
+  
+opacity: 0;
+transform: translateX(-100px);
+
+}100%{
+ 
+opacity: 1;
+transform:  translateX(0px);  
+
+
+}}
+
+.animate-welcome{
+
+  animation: welcome 3s ease; 
+  transition: all 300ms; 
+
+}
 
 @theme{
 

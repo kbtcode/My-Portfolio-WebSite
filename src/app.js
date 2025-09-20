@@ -46,15 +46,18 @@ HeaderMenu.classList.remove('show-menu')
 
 function EmptyFormValues(){
 
-NameElem.value = ''
-LastElem.value = ''
-PhoneElem.value = ''
-EmailElem.value = ''
-MessageElem.value = ''    
+NameElem.value = null; 
+LastElem.value = null;
+PhoneElem.value = null;
+EmailElem.value = null;
+MessageElem.value = null;   
     
 }
 
 HeaderItems.forEach((btn,index) => {
+
+
+
 
 btn.addEventListener('click', () => {
 
