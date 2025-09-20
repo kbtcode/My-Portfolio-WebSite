@@ -1078,7 +1078,7 @@
 }
 .hide-section {
   visibility: hidden;
-  --tw-translate-x: calc(var(--spacing) * 24);
+  --tw-translate-x: calc(var(--spacing) * 6);
   translate: var(--tw-translate-x) var(--tw-translate-y);
   overflow-y: hidden;
   opacity: 0%;
