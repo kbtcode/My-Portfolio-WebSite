@@ -4,24 +4,24 @@
 @font-face{
 
 font-family: "Poppins Bold";
-src: url('/Fonts/Poppins-Bold.ttf');
+src: url('../Fonts/Poppins-Bold.ttf') ;
 }
 
 @font-face{
 
 font-family: "Poppins Medium";
-src: url("/Fonts/Poppins-Medium.ttf");
+src: url("../Fonts/Poppins-Medium.ttf");
 
 }
 
 @font-face {
     font-family: "Monsterate Light";
-    src: url('/Fonts/Monsteraat/static/Montserrat-Light.ttf');
+    src: url('../Fonts/Monsteraat/static/Montserrat-Light.ttf');
 }
 
 @font-face {
     font-family: "Monsterate Regular";
-    src: url("/Fonts/Monsteraat/static/Montserrat-Medium.ttf");
+    src: url("../Fonts/Monsteraat/static/Montserrat-Medium.ttf");
 }
 
 

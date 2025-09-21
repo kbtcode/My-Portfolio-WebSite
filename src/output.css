@@ -20,7 +20,6 @@
     --color-rose-200: oklch(89.2% 0.058 10.001);
     --color-rose-400: oklch(71.2% 0.194 13.428);
     --color-gray-200: oklch(92.8% 0.006 264.531);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
     --color-white: #fff;
@@ -207,6 +206,9 @@
   }
   .absolute {
     position: absolute;
+  }
+  .static {
+    position: static;
   }
   .-top-11 {
     top: calc(var(--spacing) * -11);
@@ -558,9 +560,6 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
-  }
-  .object-cover {
-    object-fit: cover;
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -1056,19 +1055,19 @@
 }
 @font-face {
   font-family: "Poppins Bold";
-  src: url('/Fonts/Poppins-Bold.ttf');
+  src: url('../Fonts/Poppins-Bold.ttf');
 }
 @font-face {
   font-family: "Poppins Medium";
-  src: url("/Fonts/Poppins-Medium.ttf");
+  src: url("../Fonts/Poppins-Medium.ttf");
 }
 @font-face {
   font-family: "Monsterate Light";
-  src: url('/Fonts/Monsteraat/static/Montserrat-Light.ttf');
+  src: url('../Fonts/Monsteraat/static/Montserrat-Light.ttf');
 }
 @font-face {
   font-family: "Monsterate Regular";
-  src: url("/Fonts/Monsteraat/static/Montserrat-Medium.ttf");
+  src: url("../Fonts/Monsteraat/static/Montserrat-Medium.ttf");
 }
 .section {
   visibility: visible;
