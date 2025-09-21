@@ -33,7 +33,8 @@ src: url("/Fonts/Poppins-Medium.ttf");
 
 .hide-section{
 
-@apply invisible overflow-y-hidden opacity-0 transition-all duration-500 translate-x-6
+@apply invisible overflow-y-hidden opacity-0 transition-all duration-500 translate-x-20
+max-sm:translate-x-5
 
 }
 
