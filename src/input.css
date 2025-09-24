@@ -4,23 +4,28 @@
 
 font-family: "Poppins Bold";
 src: url('/public/Fonts/Poppins-Bold.ttf') ;
+font-display: swap;
+
 }
 
 @font-face{
 
 font-family: "Poppins Medium";
 src: url("/public/Fonts/Poppins-Medium.ttf");
+font-display: swap;
 
 }
 
 @font-face {
     font-family: "Monsterate Light";
     src: url('/public/Fonts/Monsteraat/static/Montserrat-Light.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Monsterate Regular";
     src: url("/public/Fonts/Monsteraat/static/Montserrat-Medium.ttf");
+    font-display: swap;
 }
 
 
