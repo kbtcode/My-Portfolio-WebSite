@@ -138,7 +138,7 @@ AlertNotif.classList.remove('alert-modal')
 
 const template = document.createElement('template');
 template.innerHTML = `
-<link rel="stylesheet" href="output.css">
+<link rel="stylesheet" href="src/output.css">
     
 
      <div class="px-5 pt-8 w-full flex flex-col gap-7 justify-center items-center">
