@@ -37,6 +37,15 @@ font-display: swap;
 
 }
 
+
+.design-elem{
+
+@apply rounded-full bg-linear-to-l from-pink-200/50 to-sky-200/50 
+
+
+}
+
+
 .hide-section{
 
 @apply invisible overflow-y-hidden opacity-0 transition-all duration-500 translate-x-20
