@@ -153,7 +153,6 @@ transform: translateX(-100px);
 opacity: 1;
 transform:  translateX(0px);  
 
-
 }}
 
 .animate-welcome{
@@ -172,3 +171,28 @@ transform:  translateX(0px);
 
 }
 
+@keyframes design-move{
+
+0%{
+
+  transform: translateY(0px);
+
+}
+
+
+
+100%{
+
+  transform: translateY(10px);
+
+}}
+
+
+
+
+.design-move{
+
+animation: design-move 4s infinite alternate ;
+transition: all 400ms;
+
+}
