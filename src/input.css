@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
 @font-face{
 
 font-family: "Poppins Bold";
@@ -49,7 +53,7 @@ font-display: swap;
 .hide-section{
 
 @apply invisible overflow-y-hidden opacity-0 transition-all duration-500 translate-x-20
-max-sm:translate-x-5
+max-sm:translate-x-3.5
 
 }
 
@@ -196,3 +200,5 @@ animation: design-move 4s infinite alternate ;
 transition: all 400ms;
 
 }
+
+

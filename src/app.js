@@ -20,6 +20,8 @@ const ShowMenu = $.getElementById('menu-bar')
 const HeaderMenu = $.getElementById('header-menu')
 const BreakMenu = $.getElementById('break-menu')
 const AlertNotif = $.getElementById('alert')
+const ChangeThemeBtn = $.getElementById('change-theme')
+
 
 ShowMenu.addEventListener('click', () => {
 
@@ -134,6 +136,11 @@ AlertNotif.classList.remove('alert-modal')
 
 }
 })
+
+
+
+
+
 
 
 const template = document.createElement('template');
