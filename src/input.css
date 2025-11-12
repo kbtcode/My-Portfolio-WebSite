@@ -57,11 +57,23 @@ max-sm:translate-x-3.5
 
 }
 
+
 .show-menu{
 
-@apply visible opacity-100 flex flex-col justify-around items-center absolute top-[69px] w-32 h-[90%] rounded-3xl bg-white/15 backdrop-blur-md shadow-xl z-50 transition-all duration-300;
+@apply visible opacity-100 translate-x-2 transition-all duration-500
+
 
 }
+
+.mobile-menu{
+
+ @apply max-sm:flex max-sm:flex-col max-sm:justify-around max-sm:items-center max-sm:absolute 
+ max-sm:top-[79px] max-sm:w-32 max-sm:h-[90%] max-sm:bg-white/15 max-sm:backdrop-blur-md max-sm:z-50 max-sm:rounded-3xl
+
+}
+
+
+
 
 .alert-modal{
 
