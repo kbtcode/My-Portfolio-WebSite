@@ -141,25 +141,53 @@ AlertNotif.classList.remove('alert-modal')
 }
 })
 
+//change theme btn
 
+ChangeThemeBtn.addEventListener('click', () => {
 
+  
+  const isDark = document.documentElement.classList.toggle("dark");
+  if(isDark) {  
+    localStorage.theme = 'dark'
+    ChangeThemeBtn.innerHTML= `
+    <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+</svg>
+`
+  } else{ 
+    localStorage.theme = 'light'
+    ChangeThemeBtn.innerHTML = `
+    <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+</svg>
+`
+  }
+
+ 
+})
+
+console.log(ChangeThemeBtn);
 
 
 
 
 const template = document.createElement('template');
 template.innerHTML = `
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
 <link rel="stylesheet" href="src/output.css">
     
 
      <div class="px-5 pt-8 w-full flex flex-col gap-7 justify-center items-center">
-      <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center">
+      <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-sky-300/75 to-indigo-300/75 flex justify-center items-center
+      ">
        <slot class="text-white" name="icon"></slot>
         </div>
         
         
-          <h1 class="font-PoppinMedium text-xl border-b-2 pb-1 border-b-sky-400 text-black/60 max-sm:text-[16px]"><slot name="title"></slot></h1>
-          <p class="font-MonsterateRegular max-sm:text-sm max-sm:text-center"><slot name="summary"></slot></p>
+          <h1 class="font-PoppinMedium text-xl border-b-2 pb-1 border-b-sky-400 text-black/60 max-sm:text-[16px]
+           dark:border-pink-600 dark:text-white/60"><slot name="title"></slot></h1>
+          <p class="font-MonsterateRegular max-sm:text-sm max-sm:text-center dark:text-white/60"><slot name="summary"></slot></p>
 
      </div>`;
 

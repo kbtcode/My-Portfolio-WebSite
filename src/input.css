@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 
 @font-face{
@@ -45,6 +45,7 @@ font-display: swap;
 .design-elem{
 
 @apply rounded-full bg-linear-to-l from-pink-200/50 to-sky-200/50 
+dark:from-blue-300 dark:to-white/50
 
 
 }
@@ -69,6 +70,7 @@ max-sm:translate-x-3.5
 
  @apply max-sm:flex max-sm:flex-col max-sm:justify-around max-sm:items-center max-sm:absolute 
  max-sm:top-[79px] max-sm:w-32 max-sm:h-[90%] max-sm:bg-white/15 max-sm:backdrop-blur-md max-sm:z-50 max-sm:rounded-3xl
+ max-sm:dark:bg-black/20
 
 }
 
@@ -85,6 +87,7 @@ max-sm:translate-x-3.5
 .read{
 
 @apply w-36 h-8 rounded-xl border-[1px] border-sky-300 text-sky-300 cursor-pointer
+ dark:border-pink-600 dark:text-pink-600
 
 }
 
@@ -202,8 +205,6 @@ transform:  translateX(0px);
   transform: translateY(10px);
 
 }}
-
-
 
 
 .design-move{
