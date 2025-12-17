@@ -260,14 +260,14 @@ max-xl:col-span-3 max-xl:row-span-11">
        <main class="flex flex-col gap-8 justify-center items-center">
 
 <div id="alert" class="flex items-center rounded-2xl shadow-xl absolute -top-11 gap-3 w-1/5 h-16 bg-white/15 border-[1px] border-rose-200/40 backdrop-blur-md invisible opacity-0
-max-sm:w-[80%]">
+max-sm:w-[80%] dark:bg-black/20">
 
     <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class=" w-11 h-8 text-rose-400/60">
         <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
       </svg>
 </div>
     
-    <p class="font-MonsterateRegular text-xs max-sm:w-full">Please Enter The Valid Information</p>
+    <p class="font-MonsterateRegular text-xs max-sm:w-full dark:text-white">Please Enter The Valid Information</p>
 
 
 </div>
@@ -286,13 +286,15 @@ max-sm:w-[80%]">
                     <div class="flex flex-col gap-1.5 font-MonsterateRegular">
                         <label for="name" class="text-xs text-black/70 before:content-['-'] before:text-sky-400 dark:before:text-pink-500
                         dark:text-white/60">First name</label>
-                        <input id="FirstName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
+                        <input id="FirstName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full
+                        dark:text-white" type="text">
                       </div>
 
                       <div class="flex flex-col gap-1.5 font-MonsterateRegular">
                         <label for="name" class="text-xs text-black/70 before:content-['-'] before:text-sky-400 dark:before:text-pink-500
                         dark:text-white/60">Last name</label>
-                        <input id="LastName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
+                        <input id="LastName-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full
+                        dark:text-white" type="text">
                       </div>
 
     </div>
@@ -301,13 +303,15 @@ max-sm:w-[80%]">
         <div class="flex flex-col gap-1.5 font-MonsterateRegular">
             <label for="name" class="text-xs text-black/70 before:content-['-'] before:text-sky-400
              dark:before:text-pink-500 dark:text-white/60">Phone number</label>
-            <input id="Phone-input" placeholder="example:---- --- ----" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
+            <input id="Phone-input" placeholder="example:---- --- ----" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full
+            dark:text-white" type="text">
           </div>
           
           <div class="flex flex-col gap-1.5 font-MonsterateRegular">
             <label for="name" class="text-xs text-black/70 before:content-['-'] before:text-sky-400
              dark:before:text-pink-500 dark:text-white/60">Email</label>
-            <input id="Email-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full" type="text">
+            <input id="Email-input" class="w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full
+            dark:text-white" type="text">
           </div>
 </div>
 
@@ -315,7 +319,8 @@ max-sm:w-[80%]">
     <div class="flex flex-col gap-1.5 max-sm:w-full"> 
         <label for="message" class="text-xs font-MonsterateRegular text-black/70 before:content-['-'] before:text-sky-400
          dark:before:text-pink-500 dark:text-white/60">Message</label>    
-        <textarea class="w-[790px] h-36  outline-1 outline-cyan-500/70 rounded-xl p-2 text-xs max-sm:w-full" name="" id="message-input"></textarea>
+        <textarea class="w-[790px] h-36  outline-1 outline-cyan-500/70 rounded-xl p-2 text-xs max-sm:w-full
+        dark:text-white" name="" id="message-input"></textarea>
     </div>
 </div>  
 
