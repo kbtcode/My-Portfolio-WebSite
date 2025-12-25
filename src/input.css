@@ -69,12 +69,18 @@ max-sm:translate-x-3.5
 .mobile-menu{
 
  @apply max-sm:flex max-sm:flex-col max-sm:justify-around max-sm:items-center max-sm:absolute 
- max-sm:top-[79px] max-sm:w-32 max-sm:h-[90%] max-sm:bg-white/15 max-sm:backdrop-blur-md max-sm:z-50 max-sm:rounded-3xl
+ max-sm:top-[79px] max-sm:w-32 max-sm:h-[85%] max-sm:bg-white/30 max-sm:backdrop-blur-md max-sm:z-50 max-sm:rounded-3xl
  max-sm:dark:bg-black/20
 
 }
 
+.input {
 
+ @apply transition-all duration-300 focus:ring-2 ring-cyan-500/70  dark:focus:ring-pink-600/70
+  w-96 h-9 p-1.5 rounded-md outline-1 outline-cyan-500/70 text-xs max-sm:w-full dark:outline-pink-600/70
+ dark:text-white
+
+}
 
 
 .alert-modal{
